@@ -1,11 +1,11 @@
 let productDiv = document.querySelector(".productDiv");
 
+const siteUrl = "http://flowerpowerlcb.com/wp-json/wc/store/products";
 
 
 
 
-
-fetch("https://flowerpowerlcb.com/wp-json/wc/store/products")
+fetch(siteUrl)
 .then (response => response.json())
 .then(data => {
     productlist(data);
@@ -38,7 +38,7 @@ function productlist (products) {
 }
 
 function imageUrl (id) {
-    fetch("https://flowerpowerlcb.com/wp-json/wp/v2/media")
+    fetch("http://flowerpowerlcb.com/wp-json/wp/v2/media")
     .then (response => response.json())
     .then (data => {
         

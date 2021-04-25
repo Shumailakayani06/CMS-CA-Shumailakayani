@@ -2,7 +2,7 @@ const queryString = window.location.search;
 const id = new URLSearchParams(queryString).get("id");
 if (!id) {window.location ="products.html";}
 
-let siteUrl = "https://flowerpowerlcb.com/wp-json/wc/store/products/"+id;
+let siteUrl = "http://flowerpowerlcb.com/wp-json/wc/store/products/"+id;
 fetch (siteUrl)
 .then(response => response.json())
 .then(data => {
@@ -23,7 +23,7 @@ function showProduct(data) {
     <div productDetailList>
     
     <div><img src= "${data.images[0].thumbnail}"}></div>
-    <div class="diiv"><h1>${data.name}</h1>
+    <div class="diiv><h1>${data.name}</h1>
     <p>${data.description}</p> 
     <p>${data.price_html}</P>
     <p>In stock: ${data.is_in_stock}</p> 
@@ -43,7 +43,7 @@ document.title = pname;
 
 
 function imageUrl (id) {
-    fetch("https://flowerpowerlcb.com/wp-json/wp/v2/media")
+    fetch("http://flowerpowerlcb.com/wp-json/wp/v2/media")
     .then (response => response.json())
     .then (data => {
         
