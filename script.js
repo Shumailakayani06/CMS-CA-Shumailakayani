@@ -25,12 +25,11 @@ function productlist (products) {
         allProducts += `
         <div class ="productDivlist">
         
-        
-           <h1>${products[product].name}</h1>
-           <img src="${products[product].images.thumbnail}>
-            <p>${products[product].price_html}</P>
+          <div> <img src="${products[product].images[0].src}"></div>
+           <div class="diiv"><h1>${products[product].name}</h1>
+            <p>Price: ${products[product].price_html}</P>
            
-            <a href="detail.html?id=${products[product].id}"> <button>View More</button></a>
+           <a href="detail.html?id=${products[product].id}"> <button>View More</button></a></div>
             
         </div>`;
         

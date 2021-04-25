@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   text-decoration: none;
+  font-family: montserrat;
 }
 
 body {
@@ -21,6 +22,7 @@ body {
   color: #394f4c;
   border: 3px solid #f1d6de;
   padding: 2em;
+  display: flex;
 }
 
 .showProductDiv {
@@ -53,7 +55,6 @@ p {
 
 .showProductDiv {
   text-decoration: none;
-
   border: 3px solid #f1d6de;
   margin: 2em;
 }
@@ -68,4 +69,17 @@ p {
 
 h1 {
   color: #394f4c;
+}
+
+img {
+  max-width: 324px;
+  max-height: 324px;
+  margin-left: 6em;
+}
+
+.diiv {
+  margin: 2em;
+  display: inline-block;
+  padding: 2em;
+  margin-left: 5em;
 }

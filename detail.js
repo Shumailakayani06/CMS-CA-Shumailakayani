@@ -21,16 +21,16 @@ function showProduct(data) {
     let detail =
      `
     <div productDetailList>
-    <h1>${data.name}</h1>
-    <img src= "${data.images.thumbnail}"}>
+    
+    <div><img src= "${data.images[0].thumbnail}"}></div>
+    <div class="diiv"><h1>${data.name}</h1>
     <p>${data.description}</p> 
     <p>${data.price_html}</P>
     <p>In stock: ${data.is_in_stock}</p> 
+    <a href="detail.html"> <button>Back to product list</button></a></div>
     
     </div>
-    <div>
-    <a href="detail.html"> <button>Back to product list</button></a>
-    </div>
+    
     `
 showProductDiv.innerHTML = detail;
 document.title = pname;
