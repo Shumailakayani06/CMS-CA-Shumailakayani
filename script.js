@@ -5,7 +5,7 @@ let productDiv = document.querySelector(".productDiv");
 
 
 
-fetch("http://flowerpowerlcb.com/wp-json/wc/store/products")
+fetch("https://flowerpowerlcb.com/wp-json/wc/store/products")
 .then (response => response.json())
 .then(data => {
     productlist(data);
