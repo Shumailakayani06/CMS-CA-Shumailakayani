@@ -1,11 +1,11 @@
 let productDiv = document.querySelector(".productDiv");
 
-const siteUrl = "http://flowerpowerlcb.com/wp-json/wc/store/products";
 
 
 
 
-fetch(siteUrl)
+
+fetch("http://flowerpowerlcb.com/wp-json/wc/store/products")
 .then (response => response.json())
 .then(data => {
     productlist(data);
