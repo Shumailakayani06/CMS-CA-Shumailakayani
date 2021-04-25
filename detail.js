@@ -22,7 +22,7 @@ function showProduct(data) {
      `
     <div productDetailList>
     <h1>${data.name}</h1>
-    <p>${data.featured_media}</p>
+    <img src= "${data.images.thumbnail}"}>
     <p>${data.description}</p> 
     <p>${data.price_html}</P>
     <p>In stock: ${data.is_in_stock}</p> 

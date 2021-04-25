@@ -27,7 +27,7 @@ function productlist (products) {
         
         
            <h1>${products[product].name}</h1>
-           <p>${products[product].permalik}</p>
+           <img src="${products[product].images.thumbnail}>
             <p>${products[product].price_html}</P>
            
             <a href="detail.html?id=${products[product].id}"> <button>View More</button></a>
@@ -64,4 +64,4 @@ function multiImg(src) {
 
 
 
-{/* <a href="detail.html?id=${products[product].id}">  */}
+
