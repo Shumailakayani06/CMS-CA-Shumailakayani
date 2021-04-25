@@ -74,7 +74,8 @@ h1 {
 img {
   max-width: 324px;
   max-height: 324px;
-  margin-left: 6em;
+  margin-left: 4em;
+  margin-bottom: 3em;
 }
 
 .diiv {
@@ -82,4 +83,8 @@ img {
   display: inline-block;
   padding: 2em;
   margin-left: 5em;
+}
+
+.detaildiiv {
+  margin-left: 4em;
 }
