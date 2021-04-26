@@ -1,6 +1,6 @@
 let productDiv = document.querySelector(".productDiv");
 
-const siteUrl = "http://flowerpowerlcb.com/wp-json/wc/store/products";
+const siteUrl = "https://flowerpowerlcb.com/wp-json/wc/store/products";
 
 
 
