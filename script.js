@@ -38,7 +38,7 @@ function productlist (products) {
 }
 
 function imageUrl (id) {
-    fetch("http://flowerpowerlcb.com/wp-json/wp/v2/media")
+    fetch("https://flowerpowerlcb.com/wp-json/wp/v2/media")
     .then (response => response.json())
     .then (data => {
         
